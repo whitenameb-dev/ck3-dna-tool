@@ -34,14 +34,23 @@ no game files changed.
 
 ## Install
 
-Two downloads, the same app:
+Download `dna-tool-<version>-portable.exe` and run it. There is nothing to install: keep the file
+anywhere (for example your Desktop or a Programs folder) and make a shortcut to it if you like. To
+update, download the new version and delete the old file; your library stays.
 
-- `dna-tool-<version>-setup.exe`: installs dna-tool with a Start menu entry and an uninstaller.
-- `dna-tool-<version>-portable.exe`: runs without installing.
+dna-tool is new and not code-signed yet, so Windows warns about it. That is about its reputation,
+not a virus finding (Microsoft Defender still scans the file):
 
-dna-tool is not code-signed yet, so Windows may show "Windows protected your PC". Choose
-**More info**, then **Run anyway**. To check your download, compare its SHA-256 hash
-(`Get-FileHash <file>` in PowerShell) with `SHA256SUMS.txt` in the same release.
+- **Edge** may say the file "isn't commonly downloaded": choose **⋯**, then **Keep**, then
+  **Show more**, then **Keep anyway**.
+- **Windows** may show "Windows protected your PC" when you start it: choose **More info**, then
+  **Run anyway**.
+
+To check your download, compare its SHA-256 hash (`Get-FileHash <file>` in PowerShell) with
+`SHA256SUMS.txt` in the same release.
+
+Versions up to 1.1.1 also came as an installer (`-setup.exe`). If you installed one, you can remove
+it in Windows' **Settings > Apps**; your settings and library stay.
 
 On first start, dna-tool finds your game and your playsets and asks before it reads the launcher's
 playset list.
@@ -60,9 +69,9 @@ closes.
 >
 > - If it is quarantined, only the In game tab stops working; the rest of dna-tool works as before.
 > - To use the In game tab anyway: first check your download against `SHA256SUMS.txt` in the same
->   release, then restore the file from quarantine or allow it in your antivirus. With the setup it
->   is in `resources\game-link\` in dna-tool's install folder; the portable program unpacks it to a
->   new temporary folder on each start, so if your antivirus keeps blocking it, use the setup.
+>   release, then restore the file from quarantine and allow dna-tool's portable exe in your antivirus.
+>   The portable program unpacks `game-link.exe` to a new temporary folder on each start, so allowing
+>   only that one file does not last.
 > - Download dna-tool only from this repository's
 >   [Releases](https://github.com/whitenameb-dev/ck3-dna-tool/releases). Copies from anywhere else
 >   may not be what they claim.
