@@ -193,6 +193,15 @@ Report problems in [Issues](https://github.com/whitenameb-dev/ck3-dna-tool/issue
 what happened, your playset's gene mods, and your dna-tool version (shown at the bottom of the
 menu). Screenshots help; please hide anything from adult mods.
 
+## Credits
+
+The In game tab exists because of the community's Cheat Engine table for Crusader Kings III
+([thread on FearLess Cheat Engine](https://fearlessrevolution.com/viewtopic.php?t=13576&start=1095)).
+Its authors did the research first: over many game versions they found where the game keeps the
+selected character and its DNA, and showed that a character's appearance can be changed in the
+running game. dna-tool's In game tab was inspired by that work and builds on what it showed was
+possible. Thank you. dna-tool uses none of the table's code and does not need Cheat Engine.
+
 ## Support
 
 dna-tool is free. If it is useful to you, you can support it on
